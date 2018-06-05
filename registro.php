@@ -15,7 +15,7 @@
               <input required type="password" id="pass" name="password" placeholder="Contraseña"><br>
               <input required type="password" id="pass2" name="password2" placeholder="Confirmar contraseña"><br>
               <input type="submit" name="btnLogin" id="btnLogIn" value="enviar">
-              <a href="login.php">¡Volver!</a>
+              <a href="index.php">¡Volver!</a>
             </form>
       </div>
     </body>
