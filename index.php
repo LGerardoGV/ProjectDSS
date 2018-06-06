@@ -23,7 +23,7 @@
     		opacity: 1;
 		}
 		</style>
-		
+
 	</head>
 	<body style="background-color: #ECF0F1">
 		<div class="contenedor centConten">
@@ -41,7 +41,7 @@
 					<div class="cirPeque fondoAmarillo"></div>
 					<div class="cirPeque fondoRojo"></div>
 				</div>
-				
+
 				<form action="loginBack.php" id="form" method="post">
 					<br>
 					<div class="lineaRdn fondoBlanco alinCajas" style="width: 36px; padding: 8px;">
@@ -56,7 +56,7 @@
 					<input style="width: 280px; margin-left: 15px;" class="lineaRdn fondoBlanco alinCajas" type="password" name="password" placeholder="Contraeña" id="pass">
 
 
-					<br><input class="lineaRdn fondoVerde texBlanco alinCajas" style="width: 331px;" type="submit" name="<?php ?>" id="btnLogIn">
+					<br><input class="lineaRdn fondoVerde texBlanco alinCajas" style="width: 331px;" type="submit" name="<?php ?>" id="btnLogIn" value="Ingresar">
 					<p class="liga">¿No tienes cuenta?<a href="registro.php">Registrate</a></p>
 					<!--<p class="liga" style="margin-top: -18px;">¿Olvidaste tu contraseña?<a href="fContrasena.php">Recuperar</a></p>-->
 				</form>
