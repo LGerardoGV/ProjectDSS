@@ -26,10 +26,10 @@ include("conexion.php");
 $con= Conectar();
 
 if($frec == "magna"){
-	$consulta="SELECT periodo, frecuencia FROM gasolina";
+	$consulta="SELECT periodo as Periodo, frecuencia as Frecuencia FROM gasolina";
 }
 if($frec == "premium"){
-	$consulta="SELECT periodo, frecuencia2 FROM gasolina";
+	$consulta="SELECT periodo as Periodo, frecuencia2 as Frecuencia FROM gasolina";
 }else{
 	if($frec == "" || $k=="" || $j=="" || $alfa==""){
 		//header('Location: tablas.php');
@@ -282,20 +282,20 @@ if ($err<$errormpms && $err<$errpse && $err<$errpmd && $err<$errpmda && $err<$er
 	echo "<script>alert('El pronostico del Promedio Simple es la mejor opción')</script>";
 
 	if($frec == "magna"){
-		echo "<button onclick=\"window.location.href='graficoProyectoPSF1.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph'onclick=\"window.location.href='graficoProyectoPSF1.php'\">Ver grafica</button>";
 	}
 	if($frec == "premium"){
-		echo "<button onclick=\"window.location.href='graficoProyectoPSF2.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoPSF2.php'\">Ver grafica</button>";
 	}
 }
 if ($errormpms<$err && $errormpms<$errpse && $errormpms<$errpmd && $errormpms<$errpmda && $errormpms<$errtmac) {
 	echo "<script>alert('El pronostico del Promedio Movil Simple es la mejor opción')</script>";
 
 	if($frec == "magna"){
-		echo "<button onclick=\"window.location.href='graficoProyectoPMSF1.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoPMSF1.php'\">Ver grafica</button>";
 	}
 	if($frec == "premium"){
-		echo "<button onclick=\"window.location.href='graficoProyectoPMSF2.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoPMSF2.php'\">Ver grafica</button>";
 	}
 
 }
@@ -303,20 +303,20 @@ if ($errpse<$err && $errpse<$errormpms && $errpse<$errpmd && $errpse<$errpmda &&
 	echo "<script>alert('El pronostico del Promedio Movil Simple Suavizado es la mejor opción')</script>";
 
 	if($frec == "magna"){
-		echo "<button onclick=\"window.location.href='graficoProyectoPSEF1.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoPSEF1.php'\">Ver grafica</button>";
 	}
 	if($frec == "premium"){
-		echo "<button onclick=\"window.location.href='graficoProyectoPSEF2.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoPSEF2.php'\">Ver grafica</button>";
 	}
 }
 if ($errpmd<$err && $errpmd<$errormpms && $errpmd<$errpse && $errpmd<$errpmda && $errpmd<$errtmac) {
 	echo "<script>alert('El pronostico del Promedio Movil Doble es la mejor opción')</script>";
 
 	if($frec == "magna"){
-		echo "<button onclick=\"window.location.href='graficoProyectoPMDF1.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoPMDF1.php'\">Ver grafica</button>";
 	}
 	if($frec == "premium"){
-		echo "<button onclick=\"window.location.href='graficoProyectoPMDF2.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoPMDF2.php'\">Ver grafica</button>";
 	}
 
 }
@@ -324,10 +324,10 @@ if ($errpmda<$err && $errpmda<$errormpms && $errpmda<$errpse && $errpmda<$errpmd
 	echo "<script>alert('El pronostico del Promedio Movil Doble Ajustado es la mejor opción')</script>";
 
 	if($frec == "magna"){
-		echo "<button onclick=\"window.location.href='graficoProyectoPMDAF1.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoPMDAF1.php'\">Ver grafica</button>";
 	}
 	if($frec == "premium"){
-		echo "<button onclick=\"window.location.href='graficoProyectoPMDAF2.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoPMDAF2.php'\">Ver grafica</button>";
 	}
 
 }
@@ -335,10 +335,10 @@ if ($errtmac<$err && $errtmac<$errormpms && $errtmac<$errpse && $errtmac<$errpmd
 	echo "<script>alert('El pronostico del Promedio Tasas Medias de Crecimiento es la mejor opción')</script>";
 
 	if($frec == "magna"){
-		echo "<button onclick=\"window.location.href='graficoProyectoTMACF1.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoTMACF1.php'\">Ver grafica</button>";
 	}
 	if($frec == "premium"){
-		echo "<button onclick=\"window.location.href='graficoProyectoTMACF2.php'\">Ver grafica</button>";
+		echo "<button class='btnGraph' onclick=\"window.location.href='graficoProyectoTMACF2.php'\">Ver grafica</button>";
 	}
 }
 
