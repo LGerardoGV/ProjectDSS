@@ -82,16 +82,16 @@ for ($i=1; $i < mysqli_num_rows($query)+1; $i++) {
 	$Matriz[$i][2]= round(($acumulador/$i),4,PHP_ROUND_HALF_UP);
 	//EABS
 	if($Matriz[$i][1]!=NULL AND $Matriz[$i][2]!=NULL){
-		$Matriz[$i][3]= round((ABS($Matriz[$i][1]-$Matriz[$i][2])),4,PHP_ROUND_HALF_UP);	
+		$Matriz[$i][3]= round((ABS($Matriz[$i][1]-$Matriz[$i][2])),4,PHP_ROUND_HALF_UP);
 		$errabs = $errabs + $Matriz[$i][3];
 		$conterr = $conterr + 1;
 	}else{
 		$Matriz[$i][3]='';
 	}
 
-	//PMS 
+	//PMS
 	if($i>=$k){
-		for ($a=1; $a <= $k; $a++) { 
+		for ($a=1; $a <= $k; $a++) {
 			$acumulador2 = $acumulador2 + $Matriz[$i-$a][1];
 		}
 		$Matriz[$i][4]= round(($acumulador2/$k),4,PHP_ROUND_HALF_UP);
@@ -118,7 +118,7 @@ for ($i=1; $i < mysqli_num_rows($query)+1; $i++) {
 	}else{
 		$Matriz[$i][7] = '';
 	}
-	
+
 }
 //ERRORES MEDIOS PMS
 $err = round(($errabs/$conterr),4,PHP_ROUND_HALF_UP);
@@ -137,10 +137,10 @@ $errpmd = 0;
 $errpmdabs = 0;
 $conterrpmd = 0;
 for ($i=1; $i < mysqli_num_rows($query)+2; $i++) {
-	
+
 	//PMD CUANDO J=2
 	if($i>$j+$k){
-		for ($a=1; $a <= $j; $a++) { 
+		for ($a=1; $a <= $j; $a++) {
 			$acumulador2 = $acumulador2 + $Matriz[$i-$a][4];
 		}
 		$val = round(($acumulador2/$j),4,PHP_ROUND_HALF_UP);
@@ -151,7 +151,7 @@ for ($i=1; $i < mysqli_num_rows($query)+2; $i++) {
 		$acumulador2=0;
 		//eabs(pmd)
 		if($Matriz[$i][1]!=NULL AND $Matriz[$i][8]!=NULL){
-			$Matriz[$i][9]= round((ABS($Matriz[$i][1]-$Matriz[$i][8])),4,PHP_ROUND_HALF_UP);	
+			$Matriz[$i][9]= round((ABS($Matriz[$i][1]-$Matriz[$i][8])),4,PHP_ROUND_HALF_UP);
 			$errpmdabs = $errpmdabs + $Matriz[$i][9];
 			$conterrpmd = $conterrpmd +1;
 		}else{
@@ -159,7 +159,7 @@ for ($i=1; $i < mysqli_num_rows($query)+2; $i++) {
 		}
 	}else{
 		$Matriz[$i][8]='';
-	}	
+	}
 }
 //ERROR MEDIO PMD
 $errpmd = round(($errpmdabs/$conterrpmd),4,PHP_ROUND_HALF_UP);
@@ -180,7 +180,7 @@ for ($i=1; $i < mysqli_num_rows($query)+1; $i++) {
 	}else{
 		$Matriz[$i][10]='';
 	}
-	//B	
+	//B
 	if($Matriz[$i][4]!=NULL AND $Matriz[$i][8]!=NULL){
 		$b = 2*(ABS($Matriz[$i][4]-$Matriz[$i][8])/10);
 		$Matriz[$i][11] = round(($b),4,PHP_ROUND_HALF_UP);
@@ -239,7 +239,7 @@ for ($i=1; $i < mysqli_num_rows($query)+1; $i++) {
 $errtmac = round(($errtmacabs/$conterrtmac),4,PHP_ROUND_HALF_UP);
 
 //MOSTRAR ELEMENTOS DE LA MATRIZ
-print("<table><tr>");
+print("<table><tr style= 'box-shadow:0px 5px 5px -2px rgba(0, 0, 0, 0.25)'>");
 for ($i = 0; $i < count($colName); $i++){
 	print("<th>".$colName[$i]."</th>");
 }
@@ -286,7 +286,7 @@ if ($err<$errormpms && $err<$errpse && $err<$errpmd && $err<$errpmda && $err<$er
 	}
 	if($frec == "premium"){
 		echo "<button onclick=\"window.location.href='graficoProyectoPSF2.php'\">Ver grafica</button>";
-	}	
+	}
 }
 if ($errormpms<$err && $errormpms<$errpse && $errormpms<$errpmd && $errormpms<$errpmda && $errormpms<$errtmac) {
 	echo "<script>alert('El pronostico del Promedio Movil Simple es la mejor opción')</script>";
@@ -297,7 +297,7 @@ if ($errormpms<$err && $errormpms<$errpse && $errormpms<$errpmd && $errormpms<$e
 	if($frec == "premium"){
 		echo "<button onclick=\"window.location.href='graficoProyectoPMSF2.php'\">Ver grafica</button>";
 	}
-	
+
 }
 if ($errpse<$err && $errpse<$errormpms && $errpse<$errpmd && $errpse<$errpmda && $errpse<$errtmac) {
 	echo "<script>alert('El pronostico del Promedio Movil Simple Suavizado es la mejor opción')</script>";
@@ -333,7 +333,7 @@ if ($errpmda<$err && $errpmda<$errormpms && $errpmda<$errpse && $errpmda<$errpmd
 }
 if ($errtmac<$err && $errtmac<$errormpms && $errtmac<$errpse && $errtmac<$errpmd && $errtmac<$errpmda) {
 	echo "<script>alert('El pronostico del Promedio Tasas Medias de Crecimiento es la mejor opción')</script>";
-	
+
 	if($frec == "magna"){
 		echo "<button onclick=\"window.location.href='graficoProyectoTMACF1.php'\">Ver grafica</button>";
 	}
@@ -343,9 +343,9 @@ if ($errtmac<$err && $errtmac<$errormpms && $errtmac<$errpse && $errtmac<$errpmd
 }
 
 $contador=$contador-1;
-	
+
 }
 ?>
-     
+
 </body>
 </html>
