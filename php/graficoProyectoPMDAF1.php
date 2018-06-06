@@ -6,8 +6,10 @@ session_start();
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+      google.charts.load('current', {'packages':['gauge']});
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
+
 
       function drawChart() {
         //var k = sessionStorage.getItem('k');
@@ -94,6 +96,8 @@ session_start();
               print("['".$Matriz[$i][0]."',".$Matriz[$i][1].",".$Matriz[$i][4]."],");
             }
               print("['101',,".$Matriz[$i][4]."]");
+              $ult = $Matriz[$i][4];
+              $_SESSION["ult"] = $ult;
            ?>
         ]);
 
@@ -104,13 +108,42 @@ session_start();
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
         chart.draw(data, options);
-      } 
+
+        drawChart2();
+      }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      function drawChart2() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          <?php 
+            
+            $ult = $_SESSION["ult"];
+            
+            print("['Pronostico',".$ult."]");
+          ?>
+        ]);
+
+
+        var options = {
+          width: 800, height: 240,
+          greenFrom: 0, greenTo: 19,
+          redFrom: 20, redTo: 100,
+          yellowFrom:19, yellowTo: 20,
+          minorTicks: 5
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+
+
     </script>
   </head>
   <body>
 
     <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    <div id="chart_div" style="width: 400px; height: 120px;"></div>
   </body>
 </html>
