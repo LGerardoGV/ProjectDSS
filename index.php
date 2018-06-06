@@ -10,19 +10,15 @@
 			justify-content: center;
 			text-align: center;
 		}
-		.lineaBlanca{
+		.alinCajas{
 			margin: 10px 0px 10px 0px;
 			width: auto;
 			text-align: center;
 
 		}
-		.btnColor{
-			background-color: #2ECC71; 
-			color: white;
-		}
 
 		.img>img{
-			margin-top: 125px;
+			margin-top: 75px;
 			width: 125px;
 			height: 125px;
 		}
@@ -40,31 +36,34 @@
 				<div class="img">
 					<img src="img/gas-station.png" alt="">
 				</div>
-				<div class="txt">
+
+				<div style="text-align: center; margin: 30px 0 -10px 0;">
+					<h2>Inicio de sesión</h2>
+				</div>
+				<div class="txt centConten">
 					<br>
 					<div class="cirPeque fondoAzul"></div>
 					<div class="cirPeque fondoAmarillo"></div>
 					<div class="cirPeque fondoRojo"></div>
-					<p>Inicio de session</p> 
 				</div>
 				
 				<form action="loginBack.php" id="form" method="post">
 					<br>
-					<div class="lineaBlanca" style="width: 36px; padding: 8px;">
+					<div class="lineaRdn fondoBlanco alinCajas" style="width: 36px; padding: 8px;">
 						<img src="img/email.png" style="height: 20px; width: 20px;">
 					</div>
-					<input style="width: 280px; margin-left: 15px;" class="lineaBlanca" type="email" name="correo" placeholder="Correo electronico" id="usuario">
+					<input style="width: 280px; margin-left: 15px;" class="lineaRdn fondoBlanco alinCajas" type="email" name="correo" placeholder="Correo electronico" id="usuario">
 
 					<br>
-					<div class="lineaBlanca" style="width: 36px; padding: 8px;">
+					<div class="lineaRdn fondoBlanco alinCajas" style="width: 36px; padding: 8px;">
 						<img src="img/key.png" style="height: 20px; width: 20px;">
 					</div>
-					<input style="width: 280px; margin-left: 15px;" class="lineaBlanca" type="password" name="password" placeholder="Contraeña" id="pass">
+					<input style="width: 280px; margin-left: 15px;" class="lineaRdn fondoBlanco alinCajas" type="password" name="password" placeholder="Contraeña" id="pass">
 
 
-					<br><input class="lineaBlanca btnColor" style="width: 331px;" type="submit" name="<?php ?>" id="btnLogIn">
+					<br><input class="lineaRdn fondoVerde texBlanco alinCajas" style="width: 331px;" type="submit" name="<?php ?>" id="btnLogIn">
 					<p class="liga">¿No tienes cuenta?<a href="registro.php">Registrate</a></p>
-					<p class="liga" style="margin-top: -18px;">¿Olvidaste tu contraseña?<a href="fContrasena.php">Recuperar</a></p>
+					<!--<p class="liga" style="margin-top: -18px;">¿Olvidaste tu contraseña?<a href="fContrasena.php">Recuperar</a></p>-->
 				</form>
 			</div>
 		</div>
