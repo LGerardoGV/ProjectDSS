@@ -32,16 +32,16 @@
 
 				<div class="row">
 					<div class="lineaRdn fondoBlanco alinCajas" style="width: 36px; padding: 8px;">
-						<img src="img/profile.png" style="height: 20px; width: 20px;">
+						<img src="img/email.png" style="height: 20px; width: 20px;">
 					</div>
-					<input required type="text" id="usuario" name="usuario" placeholder="Usuario" class="lineaRdn fondoBlanco alinCajas" style="margin-left: 20px;">
+					<input required type="email" id="email" name="correo" placeholder="Correo electrónico"  class="lineaRdn fondoBlanco alinCajas" style="margin-left: 20px;">
 				</div>
 
 				<div class="row">
 					<div class="lineaRdn fondoBlanco alinCajas" style="width: 36px; padding: 8px;">
-						<img src="img/email.png" style="height: 20px; width: 20px;">
+						<img src="img/blue_mail.png" style="height: 20px; width: 20px;">
 					</div>
-					<input required type="email" id="email" name="correo" placeholder="tucorreo@gmail.com"  class="lineaRdn fondoBlanco alinCajas" style="margin-left: 20px;">
+					<input required type="email" id="email2" name="correo2" placeholder="Confirmar correo"  class="lineaRdn fondoBlanco alinCajas" style="margin-left: 20px;">
 				</div>
 
 				<div class="row">
@@ -53,7 +53,7 @@
 
 			 	<div class="row">
 			 		<div class="lineaRdn fondoBlanco alinCajas" style="width: 36px; padding: 8px;">
-						<img src="img/key.png" style="height: 20px; width: 20px;">
+						<img src="img/blue_key.png" style="height: 20px; width: 20px;">
 					</div>
 			 		<input required type="password" id="pass2" name="password2" placeholder="Confirmar contraseña" class="lineaRdn fondoBlanco alinCajas" style="margin-left: 20px;">
 			 	</div>
