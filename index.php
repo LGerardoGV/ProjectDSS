@@ -56,7 +56,7 @@
 					<input style="width: 280px; margin-left: 15px;" class="lineaRdn fondoBlanco alinCajas" type="password" name="password" placeholder="Contraeña" id="pass">
 
 
-					<br><input class="lineaRdn fondoVerde texBlanco alinCajas" style="width: 331px;" type="submit" name="<?php ?>" id="btnLogIn">
+					<br><input class="lineaRdn fondoVerde texBlanco alinCajas" value="Ingresar" style="width: 331px;" type="submit" name="<?php ?>" id="btnLogIn">
 					<p class="liga">¿No tienes cuenta?<a href="registro.php">Registrate</a></p>
 					<!--<p class="liga" style="margin-top: -18px;">¿Olvidaste tu contraseña?<a href="fContrasena.php">Recuperar</a></p>-->
 				</form>

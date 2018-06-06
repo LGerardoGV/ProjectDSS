@@ -59,7 +59,7 @@
 			 	</div>
 
 			 	<div class="row">
-			 		<input type="submit" name="btnLogin" id="btnLogIn" value="Enviar" class="lineaRdn fondoVerde texBlanco" style="margin-left: 0px; margin-top: 20px; width: 100%;">
+			 		<input type="submit" name="btnLogin" id="btnLogIn" value="Regístrame" class="lineaRdn fondoAzul texBlanco" style="margin-left: 0px; margin-top: 20px; width: 100%;">
 			 	</div>
 
 			 	<div class="row">
