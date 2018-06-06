@@ -28,8 +28,8 @@
 
     }
     else{
-        echo "<script type='text/javascript'>alert('El usuario o contraseña son incorrectos');</script>";
-        //echo "El usuario o contraseña son incorrectos";
+        echo "<script type='text/javascript'>alert('El usuario o contraseña son incorrectos');location.href='index.php'</script>";    
+        ///header('Location: index.php');//echo "El usuario o contraseña son incorrectos";
     }
 
     Desconectar($con);
