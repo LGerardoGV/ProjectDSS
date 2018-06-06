@@ -28,6 +28,7 @@
 	}
 
 	function loChido(){
+
 		var opc = document.getElementById('opciones').value;
 		var k =  document.getElementById('k').value;
 		var j =  document.getElementById('j').value;
