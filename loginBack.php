@@ -1,5 +1,5 @@
-<?php 
-    include("Conexion.php");
+<?php
+    include("php/conn.php");
     $con=Conectar();
     $correo=$_POST['correo'];
     $correo=stripcslashes($correo);
@@ -15,7 +15,7 @@
     $query2="Select * from usuarios where correo='{$correo}' and password= '{$password}';";
     $r=EjecutarQuery($con,$query);
     $d=EjecutarQuery($con,$query2);
-    
+
     $impri=mysqli_fetch_assoc($r);
     $sesion = mysqli_fetch_assoc($d);
 
@@ -23,12 +23,12 @@
         $_SESSION['usu_pass']=$password;
         $_SESSION['usu_correo']=$sesion['correo'];
         //$ses = $_SESSION['usu'];
-        
-        //header('Location: inicio.php');
+
+        header('Location: php/tablas.php');
 
     }
     else{
-        
+
         echo "El usuario o contraseña son incorrectos";
     }
 

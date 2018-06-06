@@ -11,7 +11,7 @@
 
 	<title>Gasolina</title>
 
-	<script src="funciones.js"></script>
+	<script src="../js/funciones.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   </head>
@@ -33,7 +33,7 @@
 					<div class="cirPeque fondoAzul"></div>
 					<div class="cirPeque fondoAmarillo"></div>
 					<div class="cirPeque fondoRojo"></div>
-					<div class="tex" style="margin-left: 10px;">EdgardoBalderas@conca.com</div>
+					<div class="tex" style="margin-left: 10px;">myemail@mail.com</div>
 				</div>
 
 
@@ -49,14 +49,14 @@
 					<div class="tex">Valores: </div>
 					<div class="fondoAzul cir">K</div>
 					<!--Valor de K-->
-					<input type="number" class="cajasValores texAzul tex" min="1" max="99" onkeyup="verificarK(this.value)" id="k" name="k">
+					<input type="number" class="cajasValores texAzul tex" min="1" max="99" onkeyup="verificarK(this.value)" id="k" name="k" value= "<?php echo $_POST["k"]?>">
 
 					<div class="fondoAmarillo cir">J</div>
 					<!--Valor de K-->
-					<input type="number" class="cajasValores texAmarillo tex" min="1" max="99" onkeyup="verificarJ(this.value)" id="j" name="j">
+					<input type="number" class="cajasValores texAmarillo tex" min="1" max="99" onkeyup="verificarJ(this.value)" id="j" name="j" value="<?php echo $_POST["j"];?>">
 
 					<div class="fondoRojo cir">&alpha;</div>
-					<input type="number" class="cajasValores texRojo tex" min="0" max="1" step="any" onkeyup="validarAlfa(this.value)" id="alfa" name="alfa">
+					<input type="number" class="cajasValores texRojo tex" min="0" max="1" step="any" onkeyup="validarAlfa(this.value)" id="alfa" name="alfa" value="<?php echo $_POST["alfa"];?>">
 				</div>
 
 				<input onclick="loChido()" type="submit" class="lineaRdn fondoAzul texBlanco" value="Generar">

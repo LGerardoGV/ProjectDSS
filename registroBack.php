@@ -1,11 +1,11 @@
 <?php
-    include("Conexion.php");
+    include("php/conn.php");
     $con=Conectar();
-    $usuario=$_POST['usuario'];
+    $usuario=$_POST['correo'];
     $usuario=stripcslashes($usuario);
     $usuario=mysqli_real_escape_string($con,$usuario);
 
-    $correo=$_POST['correo'];
+    $correo=$_POST['correo2'];
     $correo=stripcslashes($correo);
     $correo=mysqli_real_escape_string($con,$correo);
 
@@ -47,6 +47,8 @@
                 //header('Location: fpregunta.php');
                 $_SESSION['usu_correo']=$correo;
                 $_SESSION['usu_nombre']=$usuario;
+
+                header('Location: php/tablas.php');
             }
         }
     }
