@@ -11,7 +11,7 @@
 
 	<title>Gasolina</title>
 
-	<script src="funciones.js"></script>
+	<script src="../js/funciones.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   </head>

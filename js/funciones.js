@@ -33,9 +33,8 @@
 		var j =  document.getElementById('j').value;
 		var alfa =  document.getElementById('alfa').value;
 
-		if(opc =="" || k == "" || j == "" || alfa == ""){
+		if(opc.length == 0 || k.length == 0 || j.length == 0 || alfa.length == 0){
 			alert("El formulario esta incompleto");
-		}else{
-
-		}		
+			return false;
+		}
 	}
