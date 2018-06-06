@@ -2,14 +2,9 @@
 	<head>
 		<link rel="stylesheet" href="css/estilo_menu.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-		<title>Registrase</title>
+		<title>Inicio</title>
 
 		<style>
-		.centConten{
-			display: flex;
-			justify-content: center;
-			text-align: center;
-		}
 		.alinCajas{
 			margin: 10px 0px 10px 0px;
 			width: auto;
