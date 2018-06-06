@@ -239,7 +239,7 @@ for ($i=1; $i < mysqli_num_rows($query)+1; $i++) {
 $errtmac = round(($errtmacabs/$conterrtmac),4,PHP_ROUND_HALF_UP);
 
 //MOSTRAR ELEMENTOS DE LA MATRIZ
-print("<table><tr>");
+print("<table><tr style= 'box-shadow:0px 5px 5px -2px rgba(0, 0, 0, 0.25)'>");
 for ($i = 0; $i < count($colName); $i++){
 	print("<th>".$colName[$i]."</th>");
 }
