@@ -54,13 +54,7 @@
 						<img src="img/key.png" style="height: 20px; width: 20px;">
 					</div>
 					<input style="width: 280px; margin-left: 15px;" class="lineaRdn fondoBlanco alinCajas" type="password" name="password" placeholder="Contraeña" id="pass">
-
-
-<<<<<<< HEAD
 					<br><input class="lineaRdn fondoVerde texBlanco alinCajas" style="width: 331px;" type="submit" name="<?php ?>" id="btnLogIn" value="Ingresar">
-=======
-					<br><input class="lineaRdn fondoVerde texBlanco alinCajas" value="Ingresar" style="width: 331px;" type="submit" name="<?php ?>" id="btnLogIn">
->>>>>>> 81ce840ac45fa7bfe8e0b7effa344fab5aec3a1b
 					<p class="liga">¿No tienes cuenta?<a href="registro.php">Registrate</a></p>
 					<!--<p class="liga" style="margin-top: -18px;">¿Olvidaste tu contraseña?<a href="fContrasena.php">Recuperar</a></p>-->
 				</form>
