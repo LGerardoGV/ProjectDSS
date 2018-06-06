@@ -18,6 +18,7 @@
   <body style="background-color: #ECF0F1">
 	<div class="container-fluid">
 		<div class="row">
+			<!--
 				<div style="outline: none;" >
 				  <button class="comboCir lineaRdn fondoBlanco" style="outline: none; padding: 0px 6px 0 6px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<img src="../img/ico_conf.png" id="btn_conf" style="height: 26px; width: 26px; margin-top: -3px;">
@@ -27,13 +28,18 @@
 					<a class="dropdown-item" href="#">Nosotros</a>
 					<a class="dropdown-item" href="#">Cerrar sesión</a>
 				  </div>
+				</div>-->
+
+				<div class="lineaRdn fondoBlanco" onclick="">
+					<div class="fondoRojo cir" style="margin-left: -10px;">x</div>
+					<a href="../index.php" class="tex" style="margin-left: 10px;">Cerrar sesión</a>
 				</div>
 
 				<div class="lineaRdn fondoBlanco">
 					<div class="cirPeque fondoAzul"></div>
 					<div class="cirPeque fondoAmarillo"></div>
 					<div class="cirPeque fondoRojo"></div>
-					<div class="tex" style="margin-left: 10px;">myemail@mail.com</div>
+					<div class="tex" style="margin-left: 10px;">Bienvenido c:</div>
 				</div>
 
 
