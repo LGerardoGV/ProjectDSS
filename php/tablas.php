@@ -33,7 +33,7 @@
 					<div class="cirPeque fondoAzul"></div>
 					<div class="cirPeque fondoAmarillo"></div>
 					<div class="cirPeque fondoRojo"></div>
-					<div class="tex" style="margin-left: 10px;">EdgardoBalderas@conca.com</div>
+					<div class="tex" style="margin-left: 10px;">myemail@mail.com</div>
 				</div>
 
 
