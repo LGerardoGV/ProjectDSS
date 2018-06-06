@@ -38,6 +38,7 @@
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); /*TIPO GOOGLE*/
 		/*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);  TIPO GERA*/
 		float: left;
+		border-style: none;
 	}
 	
 	*{ outline: none; color: #7F8C8D;}
